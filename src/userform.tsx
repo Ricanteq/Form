@@ -114,6 +114,11 @@ const UserForm: React.FC = () => {
             <Field type="email" id="email" name="email" className="form-control" />
             <ErrorMessage name="email" component="div" className="error-message" />
           </div>
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <Field type="text" id="password" name="password" className="form-control" />
+            <ErrorMessage name="password" component="div" className="error-message" />
+          </div>
           <button type="submit" className="btn btn-primary">Submit</button>
         </Form>
       </Formik>
